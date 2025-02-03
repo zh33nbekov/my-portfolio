@@ -1,3 +1,4 @@
+'use client'
 import { useDrawer } from '@/hooks'
 import { HeaderDesktop } from './header-desktop/HeaderDesktop'
 import { HeaderMobile } from './header-mobile/HeaderMobile'
