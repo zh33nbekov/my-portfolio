@@ -20,7 +20,7 @@ const eslintConfig = [
 		plugins: ['prettier'],
 		rules: {
 			'prettier/prettier': 'error',
-			'arrow-body-style': ['error', 'always'],
+			'arrow-body-style': ['error', 'as-needed'],
 			'prefer-arrow-callback': 'error',
 			semi: ['error', 'never', { beforeStatementContinuationChars: 'always' }],
 			quotes: ['error', 'single'],
