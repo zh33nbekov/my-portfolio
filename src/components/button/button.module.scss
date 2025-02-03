@@ -1,0 +1,20 @@
+.button {
+	width: 100%;
+	display: block;
+	border-radius: clamp(13px, 8.2px + 1.5vw, 24rem);
+	padding: 7px;
+	box-shadow:
+		5px 5px 10px 0px rgba(0, 0, 0, 0.25),
+		-5px -5px 10px 0px rgba(255, 255, 255, 0.25);
+	background: rgb(36, 39, 44);
+	color: rgb(255, 255, 255);
+	font-size: clamp(16px, 13.3px + 0.82vw, 22px);
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.38px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: nowrap;
+}
