@@ -10,8 +10,8 @@ const Home = () => (
 		<Greeting />
 		<AboutMe />
 		<Projects />
-		{/* <Skills />
-		<Experience />
+		<Skills />
+		{/* <Experience />
 		<ContactMe /> */}
 	</div>
 )
