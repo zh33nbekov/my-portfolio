@@ -5,17 +5,15 @@ import { Greeting } from '@/modules/greeting'
 import { Projects } from '@/modules/projects'
 import { Skills } from '@/modules/skills'
 
-const Home = () => {
-	return (
-		<div className='wrapper'>
-			{/* <Greeting />
-			<Projects />
+const Home = () => (
+	<div className='wrapper'>
+		<Greeting />
+		{/* <Projects />
 			<Skills />
 			<Experience />
 			<ContactMe />
 			<AboutMe /> */}
-		</div>
-	)
-}
+	</div>
+)
 
 export default Home
