@@ -14,9 +14,10 @@ export const Greeting = () => (
 			Frontend <span>developer</span>
 		</h4>
 		<p className={styles.greeting__description}>
-			A highly motivated student studying Artificial Intelligence and Machine Learning. Actively
-			seeking opportunities to apply my skills and knowledge to real-world projects and
-			contribute to the advancement of the industry.
+			A passionate software engineer with expertise in frontend development and a strong
+			foundation in server-side technologies such as Node.js and Express.js. Always eager to
+			apply my skills to impactful projects and contribute to innovative solutions in the tech
+			industry.
 		</p>
 		<div className={styles.greeting__buttons} style={{ display: 'flex' }}>
 			<Button type='link' href=''>
