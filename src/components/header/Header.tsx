@@ -1,3 +1,4 @@
+'use client'
 import { useDrawer } from '@/hooks'
 import { HeaderDesktop } from './header-desktop/HeaderDesktop'
 import { HeaderMobile } from './header-mobile/HeaderMobile'
@@ -10,7 +11,11 @@ export const Header = () => {
 			<div className={styles.header}>
 				<nav className={styles.nav}>
 					<HeaderDesktop />
-					<HeaderMobile onShowDrawer={showDrawer} onHideDrawer={hideDrawer} />
+					<HeaderMobile
+						isDrawerVisible={isDrawerVisible}
+						onShowDrawer={showDrawer}
+						onHideDrawer={hideDrawer}
+					/>
 				</nav>
 			</div>
 		</div>

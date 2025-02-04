@@ -1,8 +1,26 @@
 .list {
-	background-color: red;
+	min-width: min(222px, 60vw);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	&__item {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: clamp(16px, 13.3px + 0.82vw, 1.375rem);
+		a {
+			border-radius: 10px;
+			background-color: #7733ff;
+			// background: transparent;
+			// padding: 0;
+			// box-shadow: none;
+		}
+	}
 	&__burger {
-		width: 35px;
-		height: 35px;
+		width: clamp(35px, 17px + 5.65vw, 48px);
+		height: clamp(35px, 17px + 5.65vw, 48px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
