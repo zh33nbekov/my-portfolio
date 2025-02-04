@@ -9,8 +9,8 @@ const Home = () => (
 	<div className='wrapper'>
 		<Greeting />
 		<AboutMe />
-		{/* <Projects />
-		<Skills />
+		<Projects />
+		{/* <Skills />
 		<Experience />
 		<ContactMe /> */}
 	</div>
