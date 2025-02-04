@@ -11,7 +11,11 @@ export const Header = () => {
 			<div className={styles.header}>
 				<nav className={styles.nav}>
 					<HeaderDesktop />
-					<HeaderMobile onShowDrawer={showDrawer} onHideDrawer={hideDrawer} />
+					<HeaderMobile
+						isDrawerVisible={isDrawerVisible}
+						onShowDrawer={showDrawer}
+						onHideDrawer={hideDrawer}
+					/>
 				</nav>
 			</div>
 		</div>
