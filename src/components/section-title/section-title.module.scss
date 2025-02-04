@@ -4,11 +4,11 @@
 }
 .title {
 	color: rgb(255, 255, 255);
-	font-size: 34px;
+	font-size: clamp(25px, 21px + 1.23vw, 34px);
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0.38px;
-	padding-bottom: 29px;
+	padding-bottom: clamp(15px, 8.9px + 1.91vw, 29px);
 }
 .progress {
 	width: 100%;

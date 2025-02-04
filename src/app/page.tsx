@@ -8,11 +8,11 @@ import { Skills } from '@/modules/skills'
 const Home = () => (
 	<div className='wrapper'>
 		<Greeting />
+		<AboutMe />
 		{/* <Projects />
-			<Skills />
-			<Experience />
-			<ContactMe />
-			<AboutMe /> */}
+		<Skills />
+		<Experience />
+		<ContactMe /> */}
 	</div>
 )
 
