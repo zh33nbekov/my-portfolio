@@ -8,8 +8,8 @@
 	justify-content: center;
 	align-items: center;
 	&__image {
-		width: clamp(178px, 49px + 40.33vw, 474px);
-		height: clamp(178px, 49px + 40.33vw, 474px);
+		width: clamp(178px, 81.2px + 30.25vw, 400px);
+		width: clamp(178px, 81.2px + 30.25vw, 400px);
 		border-radius: 50%;
 		box-shadow:
 			25px 25px 60px 0px rgba(0, 0, 0, 0.25),
