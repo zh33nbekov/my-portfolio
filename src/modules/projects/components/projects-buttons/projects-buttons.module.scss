@@ -4,17 +4,17 @@
 	gap: clamp(15px, -5px + 6.27vw, 61px);
 	button {
 		font-size: clamp(15px, 12.8px + 0.68vw, 20px);
+		border-radius: clamp(13px, 8.2px + 1.5vw, 24px);
 		padding: 16px 17px;
+		padding: clamp(5px, 0.2px + 1.5vw, 16px) clamp(0px, -7.4px + 2.32vw, 17px);
 		&.active {
 			background-color: #7733ff;
 		}
 	}
 	@media (max-width: 480px) {
 		button {
-			border-radius: clamp(13px, 8.2px + 1.5vw, 24px);
 			&:nth-of-type(2) {
 				text-wrap: wrap;
-				padding: 6px 22px;
 			}
 		}
 	}

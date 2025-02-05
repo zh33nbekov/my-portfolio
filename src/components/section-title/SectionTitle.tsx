@@ -1,3 +1,5 @@
+'use client'
+import { useTranslations } from 'next-intl'
 import styles from './section-title.module.scss'
 
 type Props = {
@@ -5,14 +7,17 @@ type Props = {
 	width: string
 	positionRight?: true | undefined
 }
-export const SectionTitle: React.FC<Props> = ({ title, width, positionRight }) => (
-	<div className={styles.sectionTitle}>
-		<h3 className={styles.title} style={positionRight && { marginLeft: 'auto' }}>
-			{title}
-		</h3>
-		<div className={styles.progress}>
-			<div className={styles.progress__right} style={{ width: `${width}%` }} />
-			<div className={styles.progress__left} />
+export const SectionTitle: React.FC<Props> = ({ title, width, positionRight }) => {
+	const t = useTranslations('SectionTitles')
+	return (
+		<div className={styles.sectionTitle}>
+			<h3 className={styles.title} style={positionRight && { marginLeft: 'auto' }}>
+				{t(title)}
+			</h3>
+			<div className={styles.progress}>
+				<div className={styles.progress__right} style={{ width: `${width}%` }} />
+				<div className={styles.progress__left} />
+			</div>
 		</div>
-	</div>
-)
+	)
+}
