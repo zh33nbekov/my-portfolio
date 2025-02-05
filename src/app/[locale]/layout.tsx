@@ -17,12 +17,12 @@ export default async function RootLayout({
 }) {
 	const { locale } = await params
 	return (
-		<html lang={locale}>
-			<body>
-				<NextIntlClientProvider locale={locale}>
+		<NextIntlClientProvider locale={locale}>
+			<html lang={locale}>
+				<body>
 					<AppLayout>{children}</AppLayout>
-				</NextIntlClientProvider>
-			</body>
-		</html>
+				</body>
+			</html>
+		</NextIntlClientProvider>
 	)
 }
