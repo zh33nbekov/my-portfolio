@@ -36,6 +36,4 @@ const createButton = (props: Props) => {
 	}
 }
 
-export const Button: React.FC<Props> = (props) => {
-	return <>{createButton(props)}</>
-}
+export const Button: React.FC<Props> = (props) => <>{createButton(props)}</>

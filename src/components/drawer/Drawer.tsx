@@ -7,10 +7,8 @@ interface Props {
 	onClose: () => void
 	anchor?: 'top' | 'right' | 'bottom' | 'left'
 }
-export const Drawer: React.FC<Props> = ({ children, open, onClose, anchor = 'right' }) => {
-	return (
-		<MuiDrawer open={open} anchor={anchor} onClose={onClose}>
-			{children}
-		</MuiDrawer>
-	)
-}
+export const Drawer: React.FC<Props> = ({ children, open, onClose, anchor = 'right' }) => (
+	<MuiDrawer open={open} anchor={anchor} onClose={onClose}>
+		{children}
+	</MuiDrawer>
+)

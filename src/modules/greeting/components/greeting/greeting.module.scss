@@ -1,7 +1,5 @@
 .greeting {
-	// width: 695px;
 	padding: clamp(55px, 14.8px + 12.53vw, 147px) 0 clamp(88px, 59.2px + 8.99vw, 154px) 0;
-
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +34,6 @@
 	&__title {
 		font-size: clamp(33px, 20.3px + 3.95vw, 62px);
 		font-weight: 700;
-		// line-height: 24px;
 		letter-spacing: 0.38px;
 	}
 	&__subtitle {
@@ -46,7 +43,7 @@
 		letter-spacing: 0.38px;
 		padding-bottom: 11px;
 		span {
-			color: rgb(211, 45, 32);
+			color: #cc6ce7;
 		}
 	}
 	&__description {
