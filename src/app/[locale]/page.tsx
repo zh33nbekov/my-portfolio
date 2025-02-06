@@ -6,14 +6,14 @@ import { Projects } from '@/modules/projects'
 import { Skills } from '@/modules/skills'
 
 const Home = () => (
-	<div className='wrapper'>
+	<>
 		<Greeting />
 		<AboutMe />
 		<Projects />
 		<Skills />
 		<Experience />
 		<ContactMe />
-	</div>
+	</>
 )
 
 export default Home
