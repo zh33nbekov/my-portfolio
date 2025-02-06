@@ -2,7 +2,7 @@
 import { useTranslations } from 'next-intl'
 import styles from './section-title.module.scss'
 
-type Props = {
+interface Props {
 	title: string
 	width: string
 	positionRight?: true | undefined
