@@ -2,8 +2,8 @@ import Link from 'next/link'
 import styles from './button.module.scss'
 
 interface BaseProps {
-	onClick?: () => void
 	className?: string
+	onClick?: () => void
 	children: React.ReactNode
 }
 

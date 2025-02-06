@@ -1,5 +1,5 @@
 'use client'
-import { Button } from '@/components'
+import { Button } from '@/UI'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import GreetingImage from '../../../../../public/images/greeting/image.png'

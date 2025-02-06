@@ -1,6 +1,6 @@
 'use client'
-import { Button } from '@/components'
 import { HEADER_LINKS } from '@/constants'
+import { Button } from '@/UI'
 import { FormControl, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { useLocale, useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
@@ -18,12 +18,13 @@ interface Props {
 	onHideDrawer: () => void
 }
 export const HeaderMobile: React.FC<Props> = ({ isDrawerVisible, onShowDrawer, onHideDrawer }) => {
-	const tTranslations = useTranslations('Translations')
-	const tHeader = useTranslations('Header')
 	const router = useRouter()
 	const locale = useLocale()
+	const tHeader = useTranslations('Header')
+	const tTranslations = useTranslations('Translations')
 	const languageChangeHandler = (e: SelectChangeEvent<string>) => {
 		const checkedLocale = e.target.value
+		console.log(e.target.value)
 		router.push(`/${checkedLocale}`)
 	}
 

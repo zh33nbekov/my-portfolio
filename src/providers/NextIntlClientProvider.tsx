@@ -1,25 +1,18 @@
 import { NextIntlClientProvider as IntlClientProvider } from 'next-intl'
-import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
 
-type Props = {
-	children: ReactNode
+interface Props {
 	locale: string
+	children: ReactNode
 }
 
-const supportedLocales = ['en', 'ru']
-
 const NextIntlClientProvider = async ({ children, locale }: Props) => {
-	if (!supportedLocales.includes(locale)) {
-		notFound()
-	}
-
 	let messages
 	try {
 		messages = (await import(`../../messages/${locale}.json`)).default
 	} catch (error) {
-		console.error(error)
-		notFound()
+		// throw new Error('Messages for locale not found')
+		console.log(error)
 	}
 	return (
 		<IntlClientProvider locale={locale} messages={messages}>
