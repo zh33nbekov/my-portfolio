@@ -1,7 +1,7 @@
 import AppLayout from '@/layouts/AppLayout'
 import NextIntlClientProvider from '@/providers/NextIntlClientProvider'
 import { Metadata } from 'next'
-import { LayoutProps } from '../../../.next/types/app/page'
+import { LayoutProps } from '../../../.next/types/app/layout'
 import '../globals.css'
 
 export const metadata: Metadata = {
