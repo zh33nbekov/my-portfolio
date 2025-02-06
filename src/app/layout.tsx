@@ -1,10 +1,13 @@
-// app/layout.tsx
-import { ReactNode } from 'react'
+import NextIntlClientProvider from '@/providers/NextIntlClientProvider'
+import { getLocale } from 'next-intl/server'
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const locale = await getLocale()
 	return (
-		<html lang='en'>
-			<body>{children}</body>
+		<html lang={locale}>
+			<body>
+				<NextIntlClientProvider locale={locale}>{children}</NextIntlClientProvider>
+			</body>
 		</html>
 	)
 }
