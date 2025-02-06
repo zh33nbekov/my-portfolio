@@ -1,0 +1,41 @@
+{
+	"Translations": {
+		"english": "English",
+		"russian": "Russian"
+	},
+	"Greeting": {
+		"greeting": "Hey",
+		"intro": "I'm a Rai",
+		"role": "Frontend developer",
+		"bio": "I am a frontend developer with a deep understanding of client-side development and strong skills in working with server-side technologies, including Node.js and Express.js. I have experience in building scalable and efficient user-oriented applications and am actively seeking opportunities to apply my knowledge and skills in real-world projects to contribute to the advancement of technology.",
+		"developer": "developer",
+		"english": "English",
+		"russian": "Russian",
+		"learnMore": "Learn more",
+		"contactMe": "Contact me"
+	},
+	"Header": {
+		"Contact": "Contact",
+		"Resume": "Resume",
+		"About": "About",
+		"Certificate": "Certificate",
+		"Skills": "Skills"
+	},
+	"SectionTitles": {
+		"AboutMe": "AboutMe",
+		"Skills": "Skills",
+		"Projects": "Projects",
+		"ContactMe": "ContactMe",
+		"Experience": "Experience",
+		"Certifications": "Certifications"
+	},
+	"AboutMe": {
+		"description": "I am characterized by determination, quick learning, and a commitment to writing clean, efficient, and maintainable code, following best practices and development principles (SOLID, DRY, KISS, etc.). I am always striving to improve my skills and use the latest technologies to solve tasks. My approach is focused on creating user-friendly and intuitive interfaces, as well as effective collaboration with the team to achieve common goals. I am open to new challenges and ready to work on projects that contribute to the development and innovation in the technology field."
+	},
+	"FeedbackForm": {
+		"name": "Name*",
+		"email": "Email*",
+		"message": "Message*",
+		"send": "Send"
+	}
+}

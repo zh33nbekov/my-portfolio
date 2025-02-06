@@ -2,8 +2,8 @@ import Link from 'next/link'
 import styles from './button.module.scss'
 
 interface BaseProps {
-	onClick?: () => void
 	className?: string
+	onClick?: () => void
 	children: React.ReactNode
 }
 
@@ -36,6 +36,4 @@ const createButton = (props: Props) => {
 	}
 }
 
-export const Button: React.FC<Props> = (props) => {
-	return <>{createButton(props)}</>
-}
+export const Button: React.FC<Props> = (props) => <>{createButton(props)}</>
