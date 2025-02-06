@@ -16,7 +16,7 @@ const RootLayout = async ({
 	children: React.ReactNode
 	params: { locale: string }
 }) => {
-	const { locale } = await params
+	const locale = await params.locale
 	return (
 		<html lang={locale}>
 			<body>
