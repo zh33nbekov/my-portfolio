@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 		'Frontend developer with a strong focus on creating scalable, user-friendly, and innovative web applications using modern technologies and best practices.',
 }
 
-const RootLayout = ({
+const RootLayout = async ({
 	children,
 	params,
 }: {
 	children: React.ReactNode
-	params: { locale: string }
+	params: Promise<{ locale: string }>
 }) => {
-	const { locale } = params
+	const { locale } = await params
 	return (
 		<html lang={locale}>
 			<body>
