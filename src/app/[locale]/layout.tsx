@@ -1,6 +1,7 @@
 import AppLayout from '@/layouts/AppLayout'
 import NextIntlClientProvider from '@/providers/NextIntlClientProvider'
 import { Metadata } from 'next'
+import { LayoutProps } from '../../../.next/types/app/page'
 import '../globals.css'
 
 export const metadata: Metadata = {
@@ -9,13 +10,7 @@ export const metadata: Metadata = {
 		'Frontend developer with a strong focus on creating scalable, user-friendly, and innovative web applications using modern technologies and best practices.',
 }
 
-const RootLayout = async ({
-	children,
-	params,
-}: {
-	children: React.ReactNode
-	params: Promise<{ locale: string }>
-}) => {
+const RootLayout = async ({ children, params }: LayoutProps) => {
 	const { locale } = await params
 	return (
 		<html lang={locale}>
