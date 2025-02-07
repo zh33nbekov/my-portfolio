@@ -1,7 +1,7 @@
 'use client'
 import { HEADER_LINKS } from '@/constants'
 import { Button } from '@/UI'
-import { FormControl, MenuItem, Select, SelectChangeEvent } from '@mui/material'
+import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { useLocale, useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/navigation'
@@ -44,12 +44,11 @@ export const HeaderMobile: React.FC<Props> = ({ isDrawerVisible, onShowDrawer, o
 						},
 					}}
 				>
+					<InputLabel id='language-select-label'>Language</InputLabel>
 					<Select
-						labelId='demo-simple-select-standard-label'
-						id='demo-simple-select-standard'
-						aria-label='language'
+						labelId='language-select-label'
+						id='language-select'
 						onChange={languageChangeHandler}
-						label='lang'
 						defaultValue={locale}
 						name='language'
 					>
