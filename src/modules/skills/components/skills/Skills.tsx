@@ -33,7 +33,7 @@ export const Skills = () => {
 
 	return (
 		<section id={HEADER_LINKS_OPTIONS.SKILLS.PATH} className={styles.skills}>
-			<SectionTitle title='Skills' width='80' positionRight={true} />
+			<SectionTitle title='Skills' width='100' positionRight={true} />
 			<SkillsCategory
 				onChangeSkillCategory={changeSkillCategory}
 				currentSkillCategory={skillCategory}
