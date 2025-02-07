@@ -10,7 +10,7 @@ export const AboutMe = () => {
 	const t = useTranslations('AboutMe')
 	return (
 		<section id={HEADER_LINKS_OPTIONS.ABOUT.PATH} className={styles.aboutMe}>
-			<SectionTitle title='AboutMe' width='30' positionRight />
+			<SectionTitle title='AboutMe' width='100' positionRight />
 			<div className={styles.aboutMe__info}>
 				<div className={styles.aboutMe__image}>
 					<Image src={AboutMeImage} alt='Обо мне' priority />
