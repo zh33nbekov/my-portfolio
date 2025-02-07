@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import { memo } from 'react'
 import styles from './button.module.scss'
 
 interface BaseProps {
-	onClick?: () => void
+	active?: boolean
 	className?: string
+	onClick?: () => void
 	children: React.ReactNode
 }
 
@@ -21,7 +23,10 @@ const createButton = (props: Props) => {
 	switch (props.type) {
 		case 'button':
 			return (
-				<button className={`${styles.button} ${props.className}`} onClick={props.onClick}>
+				<button
+					className={`${styles.button} ${props.active && styles['active']} ${props.className}`}
+					onClick={props.onClick}
+				>
 					{props.children}
 				</button>
 			)
@@ -36,6 +41,5 @@ const createButton = (props: Props) => {
 	}
 }
 
-export const Button: React.FC<Props> = (props) => {
-	return <>{createButton(props)}</>
-}
+export const Button: React.FC<Props> = memo((props) => <>{createButton(props)}</>)
+Button.displayName = 'Button'

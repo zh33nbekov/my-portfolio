@@ -1,12 +1,3 @@
 .projects {
-	&__buttons {
-		display: flex;
-		gap: 61px;
-		button {
-			text-wrap: nowrap;
-			&.active {
-				background-color: #7733ff;
-			}
-		}
-	}
+	padding-bottom: clamp(88px, 53.5px + 10.76vw, 167px);
 }

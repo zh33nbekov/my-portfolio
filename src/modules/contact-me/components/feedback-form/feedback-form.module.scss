@@ -1,10 +1,12 @@
 .feedbackForm {
 	display: flex;
 	flex-direction: column;
-	gap: 33px;
+	gap: clamp(18px, 11.4px + 2.04vw, 33px);
 	align-items: center;
 	width: 457px;
-	&__input {
+	max-width: 100%;
+	&__input,
+	&__textarea {
 		width: 100%;
 		border-radius: 12px;
 		box-shadow:
@@ -15,12 +17,16 @@
 			-1px -1px 2px 0px rgba(26, 28, 37, 0.5),
 			1px 1px 2px 0px rgba(44, 50, 64, 0.3);
 		background: rgb(35, 39, 50);
-		padding: 23px 20px;
+		padding: clamp(0.75rem, 0.45rem + 1.5vw, 1.438rem) clamp(0.688rem, 0.442rem + 1.23vw, 1.25rem);
 		color: rgba(255, 255, 255, 0.5);
-		font-size: 22px;
+		font-size: clamp(16px, 13.3px + 0.82vw, 22px);
 		font-weight: 500;
 		line-height: 24px;
 		letter-spacing: 0.38px;
+	}
+	&__textarea {
+		height: clamp(95px, 61.8px + 10.35vw, 171px);
+		resize: none;
 	}
 	&__submit {
 		border-radius: 24px;
@@ -28,13 +34,21 @@
 			7px 7px 10px 0px rgba(0, 0, 0, 0.25),
 			-1.5px -1.5px 10px 0px rgba(255, 255, 255, 0.25);
 		background: transparent;
-		padding: 16px 0;
-		width: 153px;
+		padding: clamp(8px, 4.5px + 1.09vw, 16px) clamp(0px, -8.7px + 2.72vw, 20px);
+		width: clamp(120px, 105.6px + 4.5vw, 153px);
 		color: rgb(255, 255, 255);
 		font-size: 20px;
 		font-weight: 600;
 		line-height: 24px;
 		letter-spacing: 0.38px;
 		background: rgb(35, 39, 50);
+	}
+	@media (max-width: 615px) {
+		& {
+			width: 100%;
+			&__submit {
+				margin-top: clamp(30px, 19.1px + 3.39vw, 40px);
+			}
+		}
 	}
 }
