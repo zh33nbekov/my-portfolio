@@ -37,5 +37,11 @@
 		"email": "Email*",
 		"message": "Message*",
 		"send": "Send"
+	},
+	"Skills": {
+		"all": "all",
+		"language": "language",
+		"tools": "tools",
+		"styling": "styling"
 	}
 }
