@@ -4,7 +4,7 @@ import styles from './projects.module.scss'
 
 export const Projects = () => (
 	<section className={styles.projects}>
-		<SectionTitle title='Projects' width='90' />
+		<SectionTitle title='Projects' width='0' />
 		<ProjectsButtons />
 	</section>
 )
