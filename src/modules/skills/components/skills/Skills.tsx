@@ -28,20 +28,20 @@ export const Skills = () => {
 				filteringSkills(skillCategory).length
 		)
 	}
-	const { icon: Icon, name } = filteringSkills(skillCategory)[skill] ?? {
+	const { icon, name } = filteringSkills(skillCategory)[skill] ?? {
 		name: '',
 		icon: () => null,
 	}
 
 	return (
-		<section id={HEADER_LINKS_OPTIONS.SKILLS.PATH} className={`${styles.skills}`}>
+		<section id={HEADER_LINKS_OPTIONS.SKILLS.PATH} className={styles.skills}>
 			<SectionTitle title='Skills' width='80' positionRight={true} />
 			<SkillsCategory
 				onChangeSkillCategory={changeSkillCategory}
 				currentSkillCategory={skillCategory}
 			/>
 			<Slider nextSlide={nextSkill} prevSlide={prevSkill}>
-				<SkillItem skillIcon={Icon} name={name} />
+				<SkillItem skillIcon={icon} name={name} />
 			</Slider>
 		</section>
 	)
