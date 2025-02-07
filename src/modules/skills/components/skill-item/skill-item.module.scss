@@ -1,0 +1,14 @@
+.skillItem {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	svg {
+		width: clamp(88px, 60.9px + 8.45vw, 150px);
+		height: clamp(88px, 60.9px + 8.45vw, 150px);
+	}
+	&__name {
+		color: #fff;
+		font-size: 20px;
+		padding-top: 10px;
+	}
+}

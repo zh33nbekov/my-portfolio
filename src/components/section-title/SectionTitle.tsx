@@ -1,5 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
+import { memo } from 'react'
 import styles from './section-title.module.scss'
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 	width: string
 	positionRight?: true | undefined
 }
-export const SectionTitle: React.FC<Props> = ({ title, width, positionRight }) => {
+export const SectionTitle: React.FC<Props> = memo(({ title, width, positionRight }) => {
 	const t = useTranslations('SectionTitles')
 	return (
 		<div className={styles.sectionTitle}>
@@ -20,4 +21,5 @@ export const SectionTitle: React.FC<Props> = ({ title, width, positionRight }) =
 			</div>
 		</div>
 	)
-}
+})
+SectionTitle.displayName = 'SectionTitle'
