@@ -1,5 +1,5 @@
+import { Button } from '@/components/UI'
 import { HEADER_LINKS } from '@/constants'
-import { Button } from '@/UI'
 import { useTranslations } from 'next-intl'
 import styles from './header-desktop.module.scss'
 

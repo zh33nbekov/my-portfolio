@@ -1,6 +1,6 @@
 'use client'
+import { Button } from '@/components/UI'
 import { HEADER_LINKS } from '@/constants'
-import { Button } from '@/UI'
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { useLocale, useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'

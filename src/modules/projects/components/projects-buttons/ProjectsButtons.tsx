@@ -1,4 +1,4 @@
-import { Button } from '@/UI'
+import { Button } from '@/components/UI'
 import { PROJECTS_BUTTONS } from '../../constants'
 import styles from './projects-buttons.module.scss'
 export const ProjectsButtons = () => (
