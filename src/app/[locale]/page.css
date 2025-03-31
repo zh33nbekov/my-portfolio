@@ -1,0 +1,16 @@
+.modal {
+	opacity: 1;
+	transform: scale(1);
+	transition:
+		opacity 0.3s ease,
+		transform 0.3s ease;
+}
+.modal.closing {
+	opacity: 0;
+	transform: scale(0.9);
+}
+.modal-content {
+	width: 333px;
+	height: 333px;
+	background-color: blueviolet;
+}

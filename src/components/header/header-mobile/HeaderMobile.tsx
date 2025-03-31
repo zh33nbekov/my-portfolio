@@ -24,7 +24,6 @@ export const HeaderMobile: React.FC<Props> = ({ isDrawerVisible, onShowDrawer, o
 	const tTranslations = useTranslations('Translations')
 	const languageChangeHandler = (e: SelectChangeEvent<string>) => {
 		const checkedLocale = e.target.value
-		console.log(e.target.value)
 		router.push(`/${checkedLocale}`)
 	}
 

@@ -1,0 +1,99 @@
+/* Container for the entire widget */
+.chat {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	font-family: Arial, sans-serif;
+	button {
+		background-color: #0078d7;
+		color: #fff;
+		border: none;
+		border-radius: 25px;
+		padding: 10px 20px;
+		font-size: 16px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: background-color 0.3s ease;
+		&:hover {
+			background-color: #005fa3;
+		}
+	}
+}
+
+/* Open widget container */
+.widgetOpen {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* Header section of the widget */
+.header {
+	background-color: #0078d7;
+	color: #fff;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h4 {
+	margin: 0;
+	font-size: 16px;
+}
+
+.closeButton {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/* Body section of the widget */
+.body {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: none;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.textarea:focus {
+	outline: none;
+	border-color: #0078d7;
+}
+
+.sendButton {
+	background-color: #0078d7;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s ease;
+}
+
+.sendButton:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.sendButton:hover:not(:disabled) {
+	background-color: #005fa3;
+}
