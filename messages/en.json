@@ -43,5 +43,10 @@
 		"language": "language",
 		"tools": "tools",
 		"styling": "styling"
+	},
+	"Tooltips": {
+		"Resume": "Download my resume",
+		"Chat": "Let's talk? - I'm online",
+		"Burger": "Show menu"
 	}
 }

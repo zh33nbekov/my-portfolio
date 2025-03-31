@@ -1,4 +1,4 @@
-export * from './drawer/Drawer'
-export * from './header/Header'
-export * from './section-title/SectionTitle'
-export * from './slider/Slider'
+export { Header } from './header/Header'
+export { SectionTitle } from './section-title/SectionTitle'
+export { Slider } from './slider/Slider'
+export { Tooltip } from './tooltip/Tooltip'

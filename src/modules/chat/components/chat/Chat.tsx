@@ -1,19 +1,20 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import styles from './chat.module.scss'
 
 export const Chat = () => {
 	const [chatOpened, setChatOpened] = useState(false)
-	const rootChat: HTMLElement | null = document.getElementById('chat')
-	console.log(rootChat)
+	const [chat, setChat] = useState<HTMLElement | null>(null)
 
-	if (!rootChat) {
-		return null
-	}
 	const toggleWidget = () => {
 		setChatOpened((prev) => !prev)
 	}
+
+	useEffect(() => {
+		setChat(document.getElementById('chat'))
+	}, [])
+	if (!chat) return null
 
 	return (
 		<>
@@ -38,7 +39,7 @@ export const Chat = () => {
 						</div>
 					)}
 				</div>,
-				rootChat
+				chat
 			)}
 		</>
 	)

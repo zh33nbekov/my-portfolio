@@ -8,6 +8,7 @@ interface Props {
 	width: string
 	positionRight?: true | undefined
 }
+
 export const SectionTitle: React.FC<Props> = memo(({ title, width, positionRight }) => {
 	const t = useTranslations('SectionTitles')
 	return (
